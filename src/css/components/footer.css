@@ -14,3 +14,20 @@ footer {
   width: 80%;
   font-size: 18px;
 }
+
+.footerBoxOne {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+}
+
+.footerSiteName {
+  color: #e0651f;
+  font-family: Lobster;
+  font-size: 35px;
+}
+
+.siteDetails {
+  display: flex;
+  justify-content: center;
+}
