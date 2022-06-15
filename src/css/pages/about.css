@@ -1,0 +1,11 @@
+.aboutPageHeading {
+  position: absolute;
+  top: 16vh;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  color: white;
+  font-family: Lobster;
+  font-size: 6em;
+  text-align: center;
+}
