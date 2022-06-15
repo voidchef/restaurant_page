@@ -15,19 +15,22 @@ footer {
   font-size: 18px;
 }
 
-.footerBoxOne {
+.footerBoxOne,
+.footerBoxTwo {
   display: flex;
   flex-direction: column;
   width: 33%;
 }
 
-.footerSiteName {
+.footerSiteName,
+.footerContact {
   color: #e0651f;
   font-family: Lobster;
   font-size: 35px;
 }
 
-.siteDetails {
+.siteDetails,
+.contactDetails {
   display: flex;
   justify-content: center;
 }
