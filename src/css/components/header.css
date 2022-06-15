@@ -1,0 +1,16 @@
+.header {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 0px;
+  height: 60px;
+  width: 100%;
+}
+
+.siteName {
+  position: relative;
+  left: 10vw;
+  font-family: Lobster;
+  font-size: 2.5em;
+  color: white;
+}
