@@ -32,6 +32,23 @@ const initFooter = () => {
   \nTiming: Everyday from 10am - 11pm
   \nAddress: 817 N California Ave Chicago, IL 60622`;
 
+  const footerBoxThree = document.createElement("div");
+  footerBoxThree.classList.add("footerBoxThree");
+
+  const footerSubscribe = document.createElement("div");
+  footerSubscribe.classList.add("footerSubscribe");
+  footerSubscribe.textContent = "Subscribe";
+
+  const footerBoxFour = document.createElement("div");
+  footerBoxFour.classList.add("footerBoxFour");
+  const email = document.createElement("input");
+  email.classList.add("email");
+  email.setAttribute("type", "text");
+  email.setAttribute("placeholder", "E-Mail");
+  const subscribeBtn = document.createElement("button");
+  subscribeBtn.classList.add("subscribeBtn");
+  subscribeBtn.textContent = "Subscribe";
+
   content.appendChild(footer);
   footer.appendChild(footerItems);
 
@@ -42,6 +59,12 @@ const initFooter = () => {
   footerItems.appendChild(footerBoxTwo);
   footerBoxTwo.appendChild(footerContact);
   footerBoxTwo.appendChild(contactDetails);
+
+  footerItems.appendChild(footerBoxThree);
+  footerBoxThree.appendChild(footerSubscribe);
+  footerBoxThree.appendChild(footerBoxFour);
+  footerBoxFour.appendChild(email);
+  footerBoxFour.appendChild(subscribeBtn);
 };
 
 export { initFooter };

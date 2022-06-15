@@ -16,14 +16,16 @@ footer {
 }
 
 .footerBoxOne,
-.footerBoxTwo {
+.footerBoxTwo,
+.footerBoxThree {
   display: flex;
   flex-direction: column;
   width: 33%;
 }
 
 .footerSiteName,
-.footerContact {
+.footerContact,
+.footerSubscribe {
   color: #e0651f;
   font-family: Lobster;
   font-size: 35px;
@@ -33,4 +35,31 @@ footer {
 .contactDetails {
   display: flex;
   justify-content: center;
+}
+
+.footerBoxFour {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  font-size: 1em;
+}
+
+.email {
+  height: 5vh;
+  background-color: #525252;
+  border: transparent;
+}
+
+::placeholder {
+  color: white;
+}
+
+.subscribeBtn {
+  height: 5vh;
+  border-radius: 0%;
+  background-color: #e0651f;
+  padding: 0px 0px;
+  color: white;
 }
