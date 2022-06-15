@@ -14,3 +14,22 @@
   font-size: 2.5em;
   color: white;
 }
+
+.menuTabs {
+  position: absolute;
+  right: 10vw;
+  display: grid;
+  width: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 20px;
+  font-size: 1.2em;
+  color: white;
+  z-index: 1000;
+}
+
+.tabs {
+  background-color: transparent;
+  color: white;
+  font-size: 1rem;
+  z-index: 2000;
+}
