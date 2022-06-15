@@ -1,0 +1,40 @@
+.home {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2vh;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  width: 70%;
+  color: white;
+}
+
+.restaurantName {
+  height: 13vh;
+  display: flex;
+  align-items: center;
+  font-family: Lobster;
+  font-size: 3em;
+}
+
+.description {
+  max-width: 560px;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.bookingBtn {
+  height: 50px;
+  width: 120px;
+}
+
+button {
+  background-color: #e0651f;
+  color: white;
+  border-radius: 25px;
+}
