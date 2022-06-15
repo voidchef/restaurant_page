@@ -5,7 +5,7 @@ const initContact = () => {
   const content = document.getElementById("content");
 
   const bg = document.querySelector(".bg");
-  bg.style.marginTop = "-50vh";
+  bg.style.marginTop = "-50vh"
 
   const contactPageHeading = document.createElement("div");
   contactPageHeading.classList.add("contactPageHeading");
@@ -39,6 +39,46 @@ const initContact = () => {
   mapImage.classList.add("mapImage");
   mapImage.src = mapImg;
 
+  const contactFormContainer = document.createElement("div");
+  contactFormContainer.classList.add("contactFormContainer");
+
+  const contactFormTitle = document.createElement("div");
+  contactFormTitle.classList.add("contactFormTitle");
+  contactFormTitle.textContent = "Contact Form";
+
+  const contactFormHr = document.createElement("div");
+  contactFormHr.classList.add("contactFormHr");
+
+  const contactForm = document.createElement("form");
+  contactForm.classList.add("contactForm");
+
+  const labels = ["Name", "Mail", "Message"];
+  for (let index = 0; index < labels.length; index++) {
+    const label = document.createElement("label");
+    label.htmlFor = labels[index];
+    label.textContent = labels[index];
+    const lineBreak = document.createElement("br");
+
+    let input;
+    if (labels[index] === "Message") {
+      input = document.createElement("textarea");
+    } else {
+      input = document.createElement("input");
+      input.type = "text";
+    }
+
+    input.id = labels[index];
+    input.name = labels[index];
+
+    contactForm.appendChild(label);
+    label.appendChild(lineBreak);
+    label.appendChild(input);
+  }
+
+  const sendMessageBtn = document.createElement("button");
+  sendMessageBtn.classList.add("sendMessageBtn");
+  sendMessageBtn.textContent = "Send Message";
+
   content.appendChild(bg);
   content.appendChild(contactPageHeading);
 
@@ -51,6 +91,12 @@ const initContact = () => {
   address.appendChild(addressParagraph);
   address.appendChild(mapImgContainer);
   mapImgContainer.appendChild(mapImage);
+
+  contactItems.appendChild(contactFormContainer);
+  contactFormContainer.appendChild(contactFormTitle);
+  contactFormContainer.appendChild(contactFormHr);
+  contactFormContainer.appendChild(contactForm);
+  contactForm.appendChild(sendMessageBtn);
 };
 
 export { initContact };
