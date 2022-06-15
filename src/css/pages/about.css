@@ -151,3 +151,47 @@
   font-size: 1em;
   text-align: center;
 }
+
+.bgTwo {
+  width: 100%;
+  min-height: 120vh;
+  background-color: #464646;
+  background: url("../../img/bg/restaurant-690975_1280.jpg") rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.customersHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5vh;
+  height: 30vh;
+  width: 50vw;
+  margin-top: 10vh;
+  color: white;
+}
+
+.customersTitle {
+  font-family: Lobster;
+  font-size: 3em;
+}
+
+.customersParagraph {
+  font-size: 1.2em;
+  width: 750px;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+}
+
+.customerHr {
+  width: 10vw;
+  border-top: 2px #e1651f solid;
+}
