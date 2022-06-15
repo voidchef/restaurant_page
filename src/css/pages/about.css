@@ -116,3 +116,38 @@
   width: 10vw;
   border-top: 2px #e1651f solid;
 }
+
+.serviceItems {
+  max-width: 76vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  row-gap: 3vw;
+  column-gap: 18vh;
+  margin-top: 5vh;
+  margin-bottom: 18vh;
+}
+
+.serviceCell {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3vh;
+  width: 277px;
+}
+
+.serviceImg {
+  height: 74px;
+  width: 74px;
+}
+
+.serviceTitle {
+  font-family: Lobster;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.serviceParagraph {
+  font-size: 1em;
+  text-align: center;
+}

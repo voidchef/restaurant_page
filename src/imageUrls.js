@@ -11,6 +11,13 @@ import homeMenuItemImg6 from "./img/homeMenuItem6.jpg";
 import homeMenuItemImg7 from "./img/homeMenuItem7.jpg";
 import homeMenuItemImg8 from "./img/homeMenuItem8.jpg";
 
+import homeServiceItem0 from "./img/services/007-consult.png";
+import homeServiceItem1 from "./img/services/008-chef.png";
+import homeServiceItem2 from "./img/services/011-delivery-truck.png";
+import homeServiceItem3 from "./img/services/018-time.png";
+import homeServiceItem4 from "./img/services/027-order-food.png";
+import homeServiceItem5 from "./img/services/032-dinner.png";
+
 export const headerImages = [homeAboutImg1, homeAboutImg2, homeAboutImg3];
 export const homeMenuItemImgs = [
   homeMenuItemImg1,
@@ -21,4 +28,12 @@ export const homeMenuItemImgs = [
   homeMenuItemImg6,
   homeMenuItemImg7,
   homeMenuItemImg8,
+];
+export const homeServiceItemImages = [
+  homeServiceItem0,
+  homeServiceItem1,
+  homeServiceItem2,
+  homeServiceItem3,
+  homeServiceItem4,
+  homeServiceItem5,
 ];

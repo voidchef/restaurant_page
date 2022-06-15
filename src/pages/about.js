@@ -60,6 +60,32 @@ const initAbout = () => {
   const whyUsHr = document.createElement("hr");
   whyUsHr.classList.add("whyUsHr");
 
+  const serviceItems = document.createElement("div");
+  serviceItems.classList.add("serviceItems");
+
+  for (let index = 0; index < 6; index++) {
+    const serviceCell = document.createElement("div");
+    serviceCell.classList.add("serviceCell");
+
+    const serviceImg = document.createElement("img");
+    serviceImg.classList.add("serviceImg");
+    serviceImg.src = homeServiceItemImages[index];
+
+    const serviceTitle = document.createElement("div");
+    serviceTitle.classList.add("serviceTitle");
+    serviceTitle.textContent = `Service ${index + 1}`;
+
+    const serviceParagraph = document.createElement("div");
+    serviceParagraph.classList.add("serviceParagraph");
+    serviceParagraph.textContent =
+      "We provide best and fresh quality foods. We also gives you required signature dishes and more nice and cool services";
+
+    serviceItems.appendChild(serviceCell);
+    serviceCell.appendChild(serviceImg);
+    serviceCell.appendChild(serviceTitle);
+    serviceCell.appendChild(serviceParagraph);
+  }
+
   content.appendChild(bg);
   content.appendChild(aboutPageHeading);
   content.appendChild(aboutSectionWrapper);
@@ -81,6 +107,8 @@ const initAbout = () => {
   whyUsHeader.appendChild(whyUsTitle);
   whyUsHeader.appendChild(whyUsParagraph);
   whyUsParagraph.appendChild(whyUsHr);
+
+  aboutSectionTwo.appendChild(serviceItems);
 };
 
 export { initAbout };
