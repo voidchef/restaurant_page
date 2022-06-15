@@ -10,11 +10,11 @@
   text-align: center;
 }
 
-.menuSection {
+.menu {
   background: #f5f5f5;
 }
 
-.menuSectionHeader {
+.menuHeader {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -23,16 +23,82 @@
   text-align: center;
 }
 
-.menuSectionTitle {
+.menuTitle {
   font-family: Lobster;
   font-size: 3em;
 }
 
-.menuSectionParagraph {
+.menuParagraph {
   font-size: 1.2em;
 }
 
 hr {
   width: 10vw;
   border-top: 2px #e1651f solid;
+}
+
+.menuItemsWrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10vh;
+}
+
+.menuItems {
+  max-width: 76vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  grid-gap: 1rem;
+}
+
+.menuCell {
+  display: grid;
+  width: 277px;
+  height: 400px;
+  background: white;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  box-shadow: 5px 5px 10px #00000012;
+}
+
+.pizzaImg {
+  width: 277px;
+  height: 210px;
+  object-fit: scale-down;
+}
+
+.namePrice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+}
+
+.pizzaName {
+  font-family: Lobster;
+  font-size: 1.5em;
+}
+
+.pizzaPrice {
+  font-size: 1.2em;
+  padding: 5px 10px;
+  background-color: #e1651f;
+  color: white;
+}
+
+.pizzaDescription {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 1em;
+}
+
+.orderNowBtn {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  font-size: 1em;
+  background: #fdf3ee;
+  color: #e1651f;
+  border-color: transparent;
+  border-radius: 15px;
+  padding: 7px 10px;
 }
