@@ -52,3 +52,34 @@
   width: 268px;
   height: 239px;
 }
+
+.aboutUs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3vh;
+  width: 40%;
+  height: 80%;
+}
+
+.aboutUsTitle {
+  font-family: Lobster;
+  font-size: 3em;
+}
+
+.aboutUsHr {
+  width: 10vw;
+  border-top: 2px #e1651f solid;
+}
+
+.aboutUsParagraph {
+  font-size: 1.2em;
+}
+
+.aboutUsBtn {
+  height: 50px;
+  width: 120px;
+  background-color: #e0651f;
+  color: white;
+  border-radius: 25px;
+}
