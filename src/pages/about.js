@@ -1,11 +1,13 @@
 import "../css/pages/about.css";
-import { headerImages } from "../imageUrls";
+import {
+  headerImages,
+} from "../imageUrls";
 
 const initAbout = () => {
   const content = document.getElementById("content");
 
   const bg = document.querySelector(".bg");
-  bg.style.marginTop = "-50vh";
+  bg.style.marginTop = "-50vh"
 
   const aboutPageHeading = document.createElement("div");
   aboutPageHeading.classList.add("aboutPageHeading");
@@ -44,6 +46,20 @@ const initAbout = () => {
   aboutUsBtn.classList.add("aboutUsBtn");
   aboutUsBtn.textContent = "Learn More";
 
+  const aboutSectionTwo = document.createElement("div");
+  aboutSectionTwo.classList.add("aboutSectionTwo");
+  const whyUsHeader = document.createElement("div");
+  whyUsHeader.classList.add("whyUsHeader");
+  const whyUsTitle = document.createElement("div");
+  whyUsTitle.classList.add("whyUsTitle");
+  whyUsTitle.textContent = "Why Choose Us?";
+  const whyUsParagraph = document.createElement("div");
+  whyUsParagraph.classList.add("whyUsParagraph");
+  whyUsParagraph.textContent =
+    "Fish is one of the most wholesome foods that man can eat. In fact, people have been \neating fish throughout human";
+  const whyUsHr = document.createElement("hr");
+  whyUsHr.classList.add("whyUsHr");
+
   content.appendChild(bg);
   content.appendChild(aboutPageHeading);
   content.appendChild(aboutSectionWrapper);
@@ -59,6 +75,12 @@ const initAbout = () => {
   aboutUs.appendChild(aboutUsHr);
   aboutUs.appendChild(aboutUsParagraph);
   aboutUs.appendChild(aboutUsBtn);
+
+  aboutSectionWrapper.appendChild(aboutSectionTwo);
+  aboutSectionTwo.appendChild(whyUsHeader);
+  whyUsHeader.appendChild(whyUsTitle);
+  whyUsHeader.appendChild(whyUsParagraph);
+  whyUsParagraph.appendChild(whyUsHr);
 };
 
 export { initAbout };
