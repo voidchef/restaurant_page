@@ -223,3 +223,29 @@
 .reviewerName {
   font-family: "Lobster";
 }
+
+.statsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.statsCell {
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.stats {
+  font-family: "Lobster";
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.statsHr {
+  width: 10vw;
+  border-top: 3px #e1651f solid;
+}

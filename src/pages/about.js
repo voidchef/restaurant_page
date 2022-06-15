@@ -136,6 +136,37 @@ const initAbout = () => {
     reviewCell.appendChild(reviewerName);
   }
 
+  const statsContainer = document.createElement("div");
+  statsContainer.classList.add("statsContainer");
+
+  const data = ["56,789", "10,023", "4,544", "12,520"];
+  const pros = [
+    "Happy Customer",
+    "Pizzas Sold",
+    "Working Hours",
+    "Pizzas Delivered",
+  ];
+  for (let index = 0; index < 4; index++) {
+    const statsCell = document.createElement("div");
+    statsCell.classList.add("statsCell");
+
+    const stats = document.createElement("div");
+    stats.classList.add("stats");
+    stats.textContent = data[index];
+
+    const prosText = document.createElement("div");
+    prosText.classList.add("prosText");
+    prosText.textContent = pros[index];
+
+    const statsHr = document.createElement("hr");
+    statsHr.classList.add("statsHr");
+
+    statsContainer.appendChild(statsCell);
+    statsCell.appendChild(stats);
+    statsCell.appendChild(prosText);
+    prosText.appendChild(statsHr);
+  }
+
   content.appendChild(bg);
   content.appendChild(aboutPageHeading);
   content.appendChild(aboutSectionWrapper);
@@ -167,6 +198,8 @@ const initAbout = () => {
   customersHeader.appendChild(customerHr);
 
   bgTwo.appendChild(reviewContainer);
+
+  content.appendChild(statsContainer);
 };
 
 export { initAbout };
