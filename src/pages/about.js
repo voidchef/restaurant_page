@@ -1,5 +1,10 @@
 import "../css/pages/about.css";
-import { headerImages, homeServiceItemImages } from "../imageUrls";
+import {
+  headerImages,
+  homeServiceItemImages,
+  homeCustomersImages,
+  starsIcon,
+} from "../imageUrls";
 
 const initAbout = () => {
   const content = document.getElementById("content");
@@ -99,6 +104,38 @@ const initAbout = () => {
   const customerHr = document.createElement("div");
   customerHr.classList.add("customerHr");
 
+  const reviewContainer = document.createElement("div");
+  reviewContainer.classList.add("reviewContainer");
+
+  const names = ["Kerem Zopcuk", "Kateryna R.", "Max Mustermann"];
+  for (let index = 0; index < 3; index++) {
+    const reviewCell = document.createElement("div");
+    reviewCell.classList.add("reviewCell");
+
+    const reviewerImg = document.createElement("img");
+    reviewerImg.classList.add("reviewerImg");
+    reviewerImg.src = homeCustomersImages[index];
+
+    const ratingImg = document.createElement("img");
+    ratingImg.classList.add("ratingImg");
+    ratingImg.src = starsIcon;
+
+    const reviewParagraph = document.createElement("div");
+    reviewParagraph.classList.add("reviewParagraph");
+    reviewParagraph.textContent =
+      "We provide best and fresh quality foods. We also gives you required signature dishes and more nice and cool services";
+
+    const reviewerName = document.createElement("h2");
+    reviewerName.classList.add("reviewerName");
+    reviewerName.textContent = names[index];
+
+    reviewContainer.appendChild(reviewCell);
+    reviewCell.appendChild(reviewerImg);
+    reviewCell.appendChild(ratingImg);
+    reviewCell.appendChild(reviewParagraph);
+    reviewCell.appendChild(reviewerName);
+  }
+
   content.appendChild(bg);
   content.appendChild(aboutPageHeading);
   content.appendChild(aboutSectionWrapper);
@@ -128,6 +165,8 @@ const initAbout = () => {
   customersHeader.appendChild(customersTitle);
   customersHeader.appendChild(customersParagraph);
   customersHeader.appendChild(customerHr);
+
+  bgTwo.appendChild(reviewContainer);
 };
 
 export { initAbout };
