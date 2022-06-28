@@ -6,6 +6,8 @@ Project to create restaurant page using only Vanilla JS and CSS
 
 [Restaurant Page](https://voidchef.github.io/restaurant_page/)
 
+![restaurant_page](https://user-images.githubusercontent.com/79092620/173851819-090d1c91-bca9-45cd-9a8e-9a44ad338acc.png)
+
 **Note:** This Website works best with High Resolution Screens (1080p and up). Check the [improvements section](#improvements) for future updates.
 
 ## Built with
